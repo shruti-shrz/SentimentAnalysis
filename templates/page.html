@@ -1,0 +1,183 @@
+<html>
+    <head>
+        <link rel="stylesheet" />
+    </head>
+    <body>
+        <div id="feedback-list" style="position: absolute; top:7ex;margin-left:40ex;">
+
+
+<title>{{ the_title }}</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+
+.c{
+
+margin-left:37%;
+}
+input[type=text]{
+border:none;
+}
+td,th{
+padding:7px;
+}
+table{
+table-layout:fixed;
+}
+tr{
+border:none;
+}
+form{align:center;
+margin-top:2%;}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: blue;
+  border-radius: 50%;
+}
+.radioinput {
+ color: green;
+ background-color: blue;        
+}
+
+</style>
+
+
+<form action="http://127.0.0.1:5000/feedback" method="POST" enctype="multipart/form-data">
+
+<table align="left" style="border:3px solid black; border-collapse:collapse; background:#FFF5EE">
+<tbody><tr><td>
+<table align="center" border="3" class="t"><tbody><tr><th>Data Products</th><th>Bhuvan Web Services</th></tr></tbody></table><br><br></td>
+</tr><tr><td>
+<div>
+
+
+<b><b><label></label></b>               </b><b><b><label></label></b>               </b><b><b><label></label></b>               </b><b><b><label></label></b>               </b><b><b><label></label></b>               </b><b><b><label></label></b>               </b>               </b><table class="b" align="center">
+<tbody><tr><td><font size="2"><b>Sno</b></font></td><td><font size="2"><b>Queryname</b></font></td><td><font size="2"><b>Excellent</b></font></td>
+<td><b><font size="2">Good</font></b></td>
+<td><b><font size="2">Average</font></b></td>
+<td><b><font size="2">Fair</font></b></td>
+<td><b><font size="2">Poor</font></b></td>
+<td><b><font size="2">Reasons/Issues for Grading</font></b></td></tr>
+<tr align="left"><td>1.</td> <td><font size="2"><input type="text" name="ab1" value="How well does our website meet your needs" size="50" readonly=""></font></td>
+
+
+
+<td><input class="radioinput" type="radio" name="radio1" value="Excellent"></td>
+<td><input type="radio" name="radio1" value="Good"></td>
+<td><input type="radio" name="radio1" value="Average"></td>
+<td><input type="radio" name="radio1" value="Fair"></td>
+<td><input type="radio" name="radio1" value="Poor"></td>
+
+<td><font size="2"><textarea style="resize:none" maxlength="500" rows="1" cols="25" name="ta1" placeholder="Reasons/Issues for Grading"></textarea></font></td>
+</tr>
+<tr><td><input type="radio" name="radio1" value="No Response" style="display:none;" checked=""></td>
+<input type="hidden" name="h1" value="4">
+<input type="hidden" name="area" value="Data Products">
+
+<input type="hidden" name="category" value="Bhuvan Web Services">
+<input type="hidden" name="count" value="2">
+
+
+</tr><tr align="left"><td>2.</td> <td><font size="2"><input type="text" name="ab2" value="Navigation through the website" size="50" readonly=""></font></td>
+
+
+
+<td><input class="radioinput" type="radio" name="radio2" value="Excellent"></td>
+<td><input type="radio" name="radio2" value="Good"></td>
+<td><input type="radio" name="radio2" value="Average"></td>
+<td><input type="radio" name="radio2" value="Fair"></td>
+<td><input type="radio" name="radio2" value="Poor"></td>
+
+<td><font size="2"><textarea style="resize:none" maxlength="500" rows="1" cols="25" name="ta2" placeholder="Reasons/Issues for Grading"></textarea></font></td>
+</tr>
+<tr><td><input type="radio" name="radio2" value="No Response" style="display:none;" checked=""></td>
+<input type="hidden" name="h2" value="66">
+<input type="hidden" name="area" value="Data Products">
+
+<input type="hidden" name="category" value="Bhuvan Web Services">
+<input type="hidden" name="count" value="3">
+
+
+</tr><tr align="left"><td>3.</td> <td><font size="2"><input type="text" name="ab3" value="Response Time" size="50" readonly=""></font></td>
+
+
+
+<td><input class="radioinput" type="radio" name="radio3" value="Excellent"></td>
+<td><input type="radio" name="radio3" value="Good"></td>
+<td><input type="radio" name="radio3" value="Average"></td>
+<td><input type="radio" name="radio3" value="Fair"></td>
+<td><input type="radio" name="radio3" value="Poor"></td>
+
+<td><font size="2"><textarea style="resize:none" maxlength="500" rows="1" cols="25" name="ta3" placeholder="Reasons/Issues for Grading"></textarea></font></td>
+</tr>
+<tr><td><input type="radio" name="radio3" value="No Response" style="display:none;" checked=""></td>
+<input type="hidden" name="h3" value="67">
+<input type="hidden" name="area" value="Data Products">
+
+<input type="hidden" name="category" value="Bhuvan Web Services">
+<input type="hidden" name="count" value="4">
+
+
+</tr><tr align="left"><td>4.</td> <td><font size="2"><input type="text" name="ab4" value="How easy was it to understand the information" size="50" readonly=""></font></td>
+
+
+
+<td><input class="radioinput" type="radio" name="radio4" value="Excellent"></td>
+<td><input type="radio" name="radio4" value="Good"></td>
+<td><input type="radio" name="radio4" value="Average"></td>
+<td><input type="radio" name="radio4" value="Fair"></td>
+<td><input type="radio" name="radio4" value="Poor"></td>
+
+<td><font size="2"><textarea style="resize:none" maxlength="500" rows="1" cols="25" name="ta4" placeholder="Reasons/Issues for Grading"></textarea></font></td>
+</tr>
+<tr><td><input type="radio" name="radio4" value="No Response" style="display:none;" checked=""></td>
+<input type="hidden" name="h4" value="68">
+<input type="hidden" name="area" value="Data Products">
+
+<input type="hidden" name="category" value="Bhuvan Web Services">
+<input type="hidden" name="count" value="5">
+
+
+</tr>
+<tr><td><input type="radio" name="radio7" value="No Response" style="display:none;" checked=""></td>
+<input type="hidden" name="h7" value="324">
+<input type="hidden" name="area" value="Data Products">
+
+<input type="hidden" name="category" value="Bhuvan Web Services">
+<input type="hidden" name="count" value="8">
+
+
+<tr><td><input type="radio" name="radio8" value="No Response" style="display:none;" checked=""></td>
+<input type="hidden" name="h8" value="325">
+<input type="hidden" name="area" value="Data Products">
+
+<input type="hidden" name="category" value="Bhuvan Web Services">
+<input type="hidden" name="count" value="9">
+
+
+<!-- required="" -->
+
+
+</tr><tr><td colspan="7"><font size="2"><b>General Comments / Suggestions for Improvements:</b><br>
+<textarea style="resize:none" rows="3" cols="80" maxlength="1500" name="g" ></textarea></font></td>
+
+</tr>
+</tbody></table><br>
+<input type="submit" name="submit" class="c" value="submit">
+</div>
+
+
+
+
+</td></tr></tbody></table></form></div>
+    </body>
+</html>
+
