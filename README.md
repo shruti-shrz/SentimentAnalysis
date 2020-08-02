@@ -1,7 +1,7 @@
 # SentimentAnalysis
 
 ## Overview
-Sentiment Analysis is a python based web portal, use to analyse the product review and give rating based on reviews between 1 to 5 along with emojis for respective rating. Built on flask framework and uses NLP for sentiment Analysis and javascript for browser rendering.
+Sentiment Analysis is a python based web portal, use to analyse the product review and give rating based on reviews between 1 to 5 along with emojis for respective rating. Built on flask framework and uses NLP for sentiment Analysis and HTML for browser rendering.
 
 
 ## Installation
